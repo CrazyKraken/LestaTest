@@ -1,0 +1,35 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv
+venv/
+ENV/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Logs and databases
+*.log
+
+# Test caches
+.pytest_cache/
+.coverage
+.tox/
+
+
+.idea/
+.vscode/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Microsoft Office temps (for DOCX)
+~$*
+*.tmp
