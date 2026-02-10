@@ -39,6 +39,9 @@ class GameController:
             raise ValueError("На карте должен быть ровно один 'Ex'.")
 
     def run(self):
+        print(f"Вы - {self.player.name}. {self.player.description}")
+        print(f"Ваше оружие: {self.player.weapon_description}")
+        print(f"Ваша броня: {self.player.armor_description}")
         while self.in_dungeon:
             if len(self.rooms_list) == self.room_number:
                 self.rooms_list.append(self._create_room(self.dungeom_map[self.room_number]))
@@ -51,7 +54,10 @@ class GameController:
             if action == "1":
                 self.room_number += 1
             elif action == "2":
-                self.room_number -= 1
+                if self.room_number > 0:
+                    self.room_number -= 1
+                else:
+                    print("Вы не можете вернуться дальше; это вход.")
             elif action == "3":
                 self.in_dungeon = False
 
