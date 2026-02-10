@@ -17,7 +17,7 @@ def test_player_init():
     assert isinstance(player.armor_description, str)
     assert isinstance(player.defense, int)
 
-    assert isinstance(player.death_description, dict) and player.death_description
+    assert isinstance(player.death_description, str) and player.death_description
 
 
 def test_enemy_init():
