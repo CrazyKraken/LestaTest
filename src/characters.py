@@ -94,7 +94,7 @@ class Player(Character):
             name=player['name'],
             description=player['description'],
             health_points=player['health_points'],
-            death_description=random.choice(player_description_dict['death_description']),
+            death_description=random.choice(player_description_dict['death_description'])['description'],
             weapon_name=weapon['weapon_name'],
             weapon_description=weapon['weapon_description'],
             damage=weapon['damage'],
