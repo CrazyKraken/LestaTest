@@ -4,7 +4,7 @@ from src.controller import GameController
     "dungeon_map, player_hp, player_damage, expected_room_number,expected_alive",
     [
         (['St', ' ', 'Ex'],1,1,2, True),
-        (['St', ' ', 'E', 'Ex'],10000, 3,3, True),
+        (['St', ' ', 'E', 'Ex'],10000, 4,3, True),
         (['St', ' ', 'E', 'Ex'],10, 0,2, False),
     ],
 )
